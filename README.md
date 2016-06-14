@@ -1,3 +1,3 @@
 # QuestionDemo
 -----
- http://momoki.github.io/QuestionDemo
+ http://momoki.github.io/QuestionDemo/index.html
