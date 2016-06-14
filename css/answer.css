@@ -1,0 +1,159 @@
+body{
+	background:url(../image/bg.jpg);
+	background-size:100% 100%;
+	overflow: hidden;
+}
+.sug{
+	position: absolute;
+	background: url(../image/skip.jpg);
+	background-size:100% 100%;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+ }
+.sug img{
+	width: auto;
+	height: 76%;margin-top: 15%;
+}
+
+.content{display: none}
+
+.banner{
+	height: 5%;
+	text-align: center;
+}
+.banner img{
+	margin: 1%;
+	height: 80%;
+
+}
+
+.list {
+	position: relative;
+	height:40%;
+	overflow:auto;
+	color:#b9b9b9;
+	background:#edeeef;
+	line-height:1.2;
+	box-shadow: 0 2px 15px #666;
+}
+ol{
+	list-style-position:inside;
+	margin:0;padding:0;
+	height:100%;
+}
+li{
+	width:100%;
+	padding:7% 25px;
+	border-bottom:1px solid #e1e2e2;
+	box-sizing:border-box;
+}
+li.active{
+	background:#fff;
+	color:#339cff;
+	border-left:10px solid #339cff;
+	padding-left:15px;
+}
+.select{
+	position: relative;
+	height: 52%;
+}
+#select-content{
+	margin: 5%;
+	height: 90%;
+	padding-top:7%;
+	background: #fff;
+	border-radius: 10px;
+	box-sizing:border-box;
+}
+.ball{
+	margin:0 auto;
+	position: relative;
+	width: 55%;
+	background:url(../image/button.png) no-repeat 50%  50%;
+	background-size:74%;
+}
+.ball .button{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top:25%;
+	left: 25%;
+	webkit-tap-highlight-color:rgba(0,0,0,0);
+	border: 0;
+	text-indent: -9999px;
+}
+.res-content{
+	display: none;
+position:absolute;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+}
+
+.res{
+	width: 90%;
+	height: 90%;
+	margin: 5%;
+	text-align: center;
+	background: #fff;
+	border-radius: 15px;
+}
+.score-content{
+	position: relative;
+	background: #339cff;
+	height: 60%;
+	border-radius: 15px 15px 0 0;
+	overflow: hidden;
+}
+#score{
+	margin:0 auto;
+	width: 50%;
+	height: 45%;
+	padding-top: 17%;
+	background: url("../image/score-bg.png") no-repeat;
+	background-size: 100%;
+	font-size:500% ;
+	font-weight: bold;
+	color:#fff;
+}
+.score-content img{
+	margin-top: 5%;
+	height: 25%;
+}
+.score-content button{
+	position: absolute;
+	bottom: 5%;
+	left: 32%;
+	width: 36%;
+	height: 12%;
+	font-size: 24px;
+	color:#666;
+	background: #ffc7e8;
+	border: 1px solid #ffc7e8;
+	border-radius: 20px;
+}
+.detail{
+	padding:2%;
+	height: 36%;
+	line-height:1.8;
+	overflow: hidden;
+}
+.detail h1{
+	color: #339cff;
+	font-size: 15px;
+	margin:0;
+}
+
+.detail p{margin: 0;position:relative;font-size: 13px;}
+.share img{width: 80%}
+.share{
+position:absolute;
+	background: rgba(0,0,0,0.7);
+	text-align: right;
+	display: none;
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+}
