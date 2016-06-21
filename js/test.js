@@ -18,8 +18,11 @@
         ["平时会服用一些维生素来补充身体所需要的营养吗？",0,1,2,3,4,-1],
         ["在日常饮食中食用蔬菜、豆类、全麦等纤维质较多的食物吗？",0,1,2,3,4,-1],
         ["平时能保持一定量的运动锻炼吗？",0,1,2,3,4,-1]];
+    $(".but").click(function () {
+        $(".index").fadeOut()
+    });
     $(".sug").click(function () {
-        $(".sug").fadeOut()
+        $(".sug").fadeOut();
         $(".content").fadeIn();
         for(var i=0;i<18;i++){
             $(".list ol").append("<li id='q"+i+"'>"+question[i][0]+"</li>");
@@ -97,9 +100,13 @@
             $("#"+currentQuestionId).addClass("active");
         });
         function result() {
+            window.location.href="#q0";
             score=0;
             for(i=0;i<18;i++)
                 score+=question[i][6];
+            var pre=score*1.18;
+            pre=min=(pre<99)?pre.toFixed(2):99.8;
+            document.title = '我的少女值已经超过了'+pre+"%的少女，你也来测测吧~";
             $("#score").html(score);
             if(score>90){
                 $(".detail h1").html("恭喜你，属于全球20%的少女之一!")
