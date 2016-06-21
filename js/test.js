@@ -19,7 +19,8 @@
         ["在日常饮食中食用蔬菜、豆类、全麦等纤维质较多的食物吗？",0,1,2,3,4,-1],
         ["平时能保持一定量的运动锻炼吗？",0,1,2,3,4,-1]];
     $(".but").click(function () {
-        $(".index").fadeOut()
+        $(".index").fadeOut();
+        $(".sug").fadeIn();
     });
     $(".sug").click(function () {
         $(".sug").fadeOut();
